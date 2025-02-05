@@ -12,6 +12,31 @@
           <span>Customer</span>
         </a>
       </li>
+      <li class="nav-item">
+        <a class="{{Request::segment(1)=='medicine'?'nav-link':'nav-link collapsed'}}" href="{{route('medicine.home')}}">
+          <i class="bi bi-shop"></i>
+          <span>Medicine</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="{{Request::segment(1)=='medicinestoke-home'?'nav-link':'nav-link collapsed'}}" href="{{route('medicinestoke.home')}}">
+          <i class="bi bi-archive"></i>
+          <span>Medicine Stoke</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="{{Request::segment(1)=='supplier'?'nav-link':'nav-link collapsed'}}" href="{{route('supplier.home')}}">
+          <i class="bi bi-person"></i>
+          <span>Supplier</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="{{Request::segment(1)=='invoices'?'nav-link':'nav-link collapsed'}}" href="{{route('invoice.home')}}">
+          <i class="bi bi-bookmark"></i>
+          <span>Invoices</span>
+        </a>
+      </li>
+     
       <!-- End Dashboard Nav -->
 
       <li class="nav-item">
